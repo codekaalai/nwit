@@ -1,0 +1,568 @@
+/*
+Custom CSS for Nextwave Infra Tech - NWIT Brand Colors
+
+Matching the official NWIT logo color palette
+
+*/
+
+/* NWIT Brand Colors from Logo */
+:root {
+  --nwit-navy: #1E3A8A;
+  --nwit-teal: #14B8A6;
+  --nwit-gold: #F59E0B;
+  --nwit-cream: #F3F4F6;
+  --nwit-dark-navy: #1E40AF;
+  --nwit-light-teal: #5EEAD4;
+}
+
+/* Override Bootstrap Primary Colors with NWIT Navy */
+.btn-primary {
+  background-color: var(--nwit-navy) !important;
+  border-color: var(--nwit-navy) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--nwit-dark-navy) !important;
+  border-color: var(--nwit-dark-navy) !important;
+}
+
+.btn-outline-primary {
+  color: var(--nwit-navy) !important;
+  border-color: var(--nwit-navy) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--nwit-navy) !important;
+  border-color: var(--nwit-navy) !important;
+}
+
+.text-primary {
+  color: var(--nwit-navy) !important;
+}
+
+.bg-primary {
+  background-color: var(--nwit-navy) !important;
+}
+
+.border-primary {
+  border-color: var(--nwit-navy) !important;
+}
+
+/* Secondary colors with NWIT Teal */
+.btn-secondary {
+  background-color: var(--nwit-teal) !important;
+  border-color: var(--nwit-teal) !important;
+  color: white !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+  background-color: var(--nwit-gold) !important;
+  border-color: var(--nwit-gold) !important;
+  color: white !important;
+}
+
+.bg-secondary {
+  background-color: var(--nwit-navy) !important;
+}
+
+/* Navigation active states */
+.nav-link.active,
+.nav-link:hover {
+  color: var(--nwit-teal) !important;
+}
+
+/* Custom NWIT brand accents */
+.nwit-navy {
+  color: var(--nwit-navy) !important;
+}
+
+.nwit-teal {
+  color: var(--nwit-teal) !important;
+}
+
+.nwit-gold {
+  color: var(--nwit-gold) !important;
+}
+
+.nwit-navy-bg {
+  background-color: var(--nwit-navy) !important;
+}
+
+.nwit-teal-bg {
+  background-color: var(--nwit-teal) !important;
+}
+
+/* Progress bars and accents */
+.progress-bar {
+  background-color: var(--nwit-teal) !important;
+}
+
+/* Footer styling fixes */
+footer.bg-secondary {
+  background: linear-gradient(135deg, var(--nwit-navy) 0%, var(--nwit-dark-navy) 100%) !important;
+}
+
+footer .bg-primary {
+  background: linear-gradient(135deg, var(--nwit-teal) 0%, var(--nwit-navy) 100%) !important;
+}
+
+/* Fix footer logo filter for dark background */
+
+
+/* Improve footer link colors */
+footer a.text-light:hover {
+  color: var(--nwit-light-teal) !important;
+}
+
+/* Add gold accents for check marks and bullet points */
+.bx-circle,
+.bxs-circle {
+  color: var(--nwit-gold) !important;
+}
+
+/* Enhance banner text colors */
+.banner-content .text-light {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the "Why Choose Us" checkmarks */
+h3:has-text("✅") {
+  color: var(--nwit-teal) !important;
+}
+
+/* Fix service filter buttons visibility */
+.service-tag .filter-btn {
+  color: white !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.service-tag .filter-btn:hover {
+  background-color: var(--nwit-teal) !important;
+  border-color: var(--nwit-teal) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
+.service-tag .filter-btn.active {
+  background-color: var(--nwit-navy) !important;
+  border-color: var(--nwit-navy) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.4);
+}
+
+/* Fix services page filter buttons */
+.filter-btns .filter-btn {
+  background-color: rgba(30, 58, 138, 0.1) !important;
+  border: 1px solid var(--nwit-navy) !important;
+  color: var(--nwit-navy) !important;
+  transition: all 0.3s ease;
+}
+
+.filter-btns .filter-btn:hover {
+  background-color: var(--nwit-teal) !important;
+  border-color: var(--nwit-teal) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.3);
+}
+
+.filter-btns .filter-btn.active {
+  background-color: var(--nwit-navy) !important;
+  border-color: var(--nwit-navy) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.4);
+}
+
+/* Client Logo Carousel Styles */
+.client-logos-section {
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-top: 1px solid rgba(30, 58, 138, 0.1);
+  border-bottom: 1px solid rgba(30, 58, 138, 0.1);
+}
+
+.client-logos-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.client-logos-track {
+  display: flex;
+  animation: slideLogos 20s linear infinite;
+  width: calc(200%);
+  gap: 40px;
+}
+
+.client-logo-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  min-width: 140px;
+}
+
+.client-logo-item:hover {
+  transform: scale(1.05);
+}
+
+.client-logo {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.6);
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  /* padding: 10px; */
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-logo:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15);
+  background: rgba(255, 255, 255, 1);
+}
+
+@keyframes slideLogos {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.client-logos-wrapper:hover .client-logos-track {
+  animation-play-state: paused;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .client-logo {
+    width: 80px;
+    height: 60px;
+  }
+
+  .client-logo-item {
+    min-width: 100px;
+  }
+
+  .client-logos-track {
+    gap: 20px;
+    animation: slideLogos 15s linear infinite;
+  }
+}
+
+/* Simple Services Section Styles - Theme Aligned */
+.services-header-section {
+  position: relative;
+}
+
+.services-logo {
+  width: 120px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.services-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-logo {
+    width: 80px;
+  }
+}
+
+/* Video Background Banner Styles */
+.video-banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -2;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(30, 58, 138, 0.8) 0%,
+      rgba(20, 184, 166, 0.6) 50%,
+      rgba(30, 58, 138, 0.9) 100%);
+  z-index: -1;
+}
+
+/* Enhanced banner content for video background */
+.video-banner-wrapper .banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.video-banner-wrapper .banner-heading {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease-out;
+}
+
+.video-banner-wrapper .banner-body {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.video-banner-wrapper .banner-button {
+  animation: fadeInUp 1.4s ease-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.video-banner-wrapper .banner-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Carousel indicators for video background */
+.video-banner-wrapper .carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.video-banner-wrapper .carousel-indicators .active {
+  background-color: var(--nwit-teal) !important;
+  border-color: var(--nwit-teal);
+  transform: scale(1.2);
+}
+
+/* Carousel controls for video background */
+.video-banner-wrapper .carousel-control-prev i,
+.video-banner-wrapper .carousel-control-next i {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-size: 3em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.video-banner-wrapper .carousel-control-prev:hover i,
+.video-banner-wrapper .carousel-control-next:hover i {
+  color: var(--nwit-teal) !important;
+  transform: scale(1.1);
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive video background */
+@media (max-width: 768px) {
+  .video-banner-wrapper {
+    min-height: 100vh;
+  }
+
+  .banner-video {
+    /* On mobile, prioritize covering the width */
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+
+  .video-overlay {
+    background: linear-gradient(135deg,
+        rgba(30, 58, 138, 0.9) 0%,
+        rgba(20, 184, 166, 0.7) 50%,
+        rgba(30, 58, 138, 0.95) 100%);
+  }
+
+  .video-banner-wrapper .banner-heading {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+
+  .video-banner-wrapper .banner-body {
+    font-size: 1rem;
+  }
+}
+
+/* Ensure video doesn't interfere with other sections */
+.video-banner-wrapper+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gradient Overlay for Other Page Banners */
+#work_banner::before,
+#about_banner::before,
+#contact_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg,
+      rgba(30, 58, 138, 0.8) 0%,
+      rgba(20, 184, 166, 0.6) 50%,
+      rgba(30, 58, 138, 0.9) 100%);
+  z-index: 1;
+}
+
+/* Ensure banner content appears above overlay */
+#work_banner .banner-content,
+#about_banner .banner-content,
+#contact_banner .banner-content,
+#work_banner .banner-vertical-center-work,
+#about_banner .banner-vertical-center-work,
+#contact_banner .banner-vertical-center-work {
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhanced text styling for banner overlays */
+#work_banner .banner-heading,
+#about_banner .banner-heading,
+#contact_banner .banner-heading {
+  color: white !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+#work_banner .banner-body,
+#about_banner .banner-body,
+#contact_banner .banner-body {
+  color: rgba(255, 255, 255, 0.9) !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+#work_banner h3,
+#about_banner h3,
+#contact_banner h3 {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Update button styles for banner overlays */
+#work_banner .btn-outline-light,
+#about_banner .btn-outline-light,
+#contact_banner .btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#work_banner .btn-outline-light:hover,
+#about_banner .btn-outline-light:hover,
+#contact_banner .btn-outline-light:hover {
+  background-color: var(--nwit-teal);
+  border-color: var(--nwit-teal);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(20, 184, 166, 0.4);
+}
+
+#work_banner .btn-secondary,
+#about_banner .btn-secondary,
+#contact_banner .btn-secondary {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#work_banner .btn-secondary:hover,
+#about_banner .btn-secondary:hover,
+#contact_banner .btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments for banner overlays */
+@media (max-width: 768px) {
+
+  #work_banner::before,
+  #about_banner::before,
+  #contact_banner::before {
+    background: linear-gradient(135deg,
+        rgba(30, 58, 138, 0.9) 0%,
+        rgba(20, 184, 166, 0.7) 50%,
+        rgba(30, 58, 138, 0.95) 100%);
+  }
+}
+}
+
+/* About Page - Capability Cards */
+.capability-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(30, 58, 138, 0.1) !important;
+}
+
+.capability-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(30, 58, 138, 0.15) !important;
+}
+
+.capability-card .bx {
+  transition: color 0.3s ease;
+}
+
+.capability-card:hover .bx {
+  color: var(--nwit-teal) !important;
+}
+
+/* About Page - Industry Items */
+.industry-item {
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.industry-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.industry-item .bx {
+  transition: all 0.3s ease;
+}
+
+.industry-item:hover .bx {
+  transform: scale(1.1);
+}

@@ -1,679 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <title>Nextwave Infra Tech - Empowering Digital Transformation with Integrated IT Solutions</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <!-- Load Require CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font CSS -->
-    <link href="assets/css/boxicon.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Load Tempalte CSS -->
-    <link rel="stylesheet" href="assets/css/nwit-main.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <!--
-    
-Nextwave Infra Tech (NWIT) Website
-Smart Information, Seamless Technology
-
--->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nextwave Infratech is a premium technology transformation consultancy delivering enterprise engineering, AI operating systems, and infrastructure integration.">
+  <title>Nextwave Infratech | Enterprise Technology Transformation Consultancy</title>
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-
 <body>
-    <!-- Header -->
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand h1" href="index.html">
-                <img src="./assets/img/nwit-logo1.png" alt="NWIT Logo" style="width: 80px; margin-right: 10px;">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between"
-                id="navbar-toggler-success">
-                <div class="flex-fill mb-2">
-                    <ul class="nav navbar-nav d-flex justify-content-end text-center text-dark">
-                        <li class="nav-item me-3">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item me-3">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="work.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Close Header -->
-
-
-    <!-- Start Banner Hero with Video Background -->
-    <div class="banner-wrapper video-banner-wrapper">
-        <!-- Video Background -->
-        <video class="banner-video" autoplay muted loop playsinline>
-            <source src="./assets/img/bg-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Dark Overlay -->
-        <div class="video-overlay"></div>
-
-        <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
-            <!-- Start slider -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="py-5 row d-flex align-items-center">
-                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1
-                                    class="banner-heading h1 text-white display-3 mb-0 pb-5 mx-0 px-0 fw-bold typo-space-line">
-                                    Transforming <strong>Digital Futures</strong> with
-                                    <br>Next-Generation Technology
-                                </h1>
-                                <p class="banner-body text-light py-3 mx-0 px-0">
-                                    Experience the power of innovation at Nextwave Infra Tech. We architect digital
-                                    ecosystems that drive business transformation through cutting-edge AI solutions,
-                                    seamless infrastructure, and intelligent automation that adapts to your evolving
-                                    needs.
-                                </p>
-                                <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 me-3"
-                                    href="contact.html" role="button">Start Your Journey</a>
-                                <a class="banner-button btn rounded-pill btn-outline-light btn-lg px-4"
-                                    href="about.html" role="button">Discover More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="py-5 row d-flex align-items-center">
-                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1 class="banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 fw-bold">
-                                    Where Innovation Meets <strong>Reliability</strong>
-                                </h1>
-                                <p class="banner-body text-light py-3">
-                                    Built on a foundation of trust and technological excellence, we deliver
-                                    enterprise-grade solutions that scale with your ambitions. From startups to Fortune
-                                    500 companies, we're the digital backbone that powers success.
-                                </p>
-                                <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 me-3" href="work.html"
-                                    role="button">Explore Solutions</a>
-                                <a class="banner-button btn rounded-pill btn-outline-light btn-lg px-4"
-                                    href="contact.html" role="button">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="py-5 row d-flex align-items-center">
-                            <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
-                                <h1 class="banner-heading h1 text-white display-3 mb-0 pb-3 mx-0 px-0 fw-bold">
-                                    <strong>Agentic AI</strong> - Intelligence That Works
-                                </h1>
-                                <p class="banner-body text-light py-3">
-                                    Step into the future with autonomous AI systems that think, learn, and act on your
-                                    behalf. Our Agentic AI solutions don't just automate processes—they revolutionize
-                                    how your business operates, making intelligent decisions that drive unprecedented
-                                    growth.
-                                </p>
-                                <a class="banner-button btn rounded-pill btn-primary btn-lg px-4 me-3"
-                                    href="contact.html" role="button">Experience AI</a>
-                                <a class="banner-button btn rounded-pill btn-outline-light btn-lg px-4" href="work.html"
-                                    role="button">View AI Solutions</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
-                    data-bs-slide="prev">
-                    <i class='bx bx-chevron-left'></i>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
-                    data-bs-slide="next">
-                    <i class='bx bx-chevron-right'></i>
-                    <span class="visually-hidden">Next</span>
-                </a>
-            </div>
-            <!-- End slider -->
-
-        </div>
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Nextwave Infratech home">
+        <img src="assets/img/nwit-logo1.png" alt="Nextwave Infratech logo">
+        <span>Nextwave Infratech</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+      <nav id="site-navigation" class="site-nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="ai-innovation.html">AI &amp; Innovation</a>
+        <a href="technology-stack.html">Technology Stack</a>
+        <a href="case-studies.html">Case Studies</a>
+        <a href="investors.html">Investors</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <!-- End Banner Hero -->
+  </header>
 
-    <!-- Start Client Logo Carousel -->
-    <section class="client-logos-section py-4 bg-light">
-        <div class="container">
-            <div class="client-logos-wrapper">
-                <div class="client-logos-track">
-                    <!-- First set of logos -->
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="NHM Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="TN Government Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    
-                    <!-- Duplicate set for seamless loop -->
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="NHM Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="TN Government Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/nhm.png" alt="Client Logo" class="client-logo">
-                    </div>
-                    <div class="client-logo-item">
-                        <img src="./assets/img/clients/tngovtlogo.png" alt="Client Logo" class="client-logo">
-                    </div>
-                </div>
-            </div>
+  <main id="main-content">
+    <section class="hero section-xl">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Enterprise Transformation Consultancy</p>
+          <h1>De-risking complex transformation programs from architecture strategy to production operations.</h1>
+          <p class="lede">Nextwave Infratech partners with CIO, COO, and platform leadership teams to modernize legacy landscapes, operationalize AI responsibly, and integrate infrastructure at enterprise scale.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="contact.html">Book an Executive Advisory Call</a>
+            <a class="btn btn-secondary" href="case-studies.html">Review Delivery Evidence</a>
+          </div>
         </div>
-    </section>
-    <!-- End Client Logo Carousel -->
-
-    <!-- Start Service -->
-    <section class="service-wrapper py-5 bg-white">
-        <div class="container-fluid pb-3">
-            <div class="row">
-                <div class="col-12 text-center py-5">
-                    <div class="services-header-section">
-                        <img src="./assets/img/nwit-logo.png" alt="NWIT Logo" class="services-logo mb-4">
-                        <h2 class="h2 semi-bold-600 text-primary">Our Core Services</h2>
-                        <h3 class="h4 text-secondary mt-2 mb-4">Comprehensive IT Solutions for Modern Enterprises</h3>
-                        <p class="lead text-muted col-lg-8 mx-auto">
-                            From website development and mobile applications to hardware integration, customer support,
-                            and cutting-edge AI solutions - we deliver integrated technology services that drive your
-                            business forward.
-                        </p>
-                    </div>
-                </div>
+        <aside class="hero-proof panel reveal" aria-label="Transformation outcomes snapshot">
+          <h2>Execution confidence, measured.</h2>
+          <dl class="metric-list">
+            <div>
+              <dt><span data-counter="42">0</span>+</dt>
+              <dd>Enterprise programs delivered across regulated and high-growth sectors.</dd>
             </div>
-        </div>
-
-        <div class="service-tag py-5 bg-secondary">
-            <div class="col-md-12">
-                <ul class="nav d-flex justify-content-center">
-                    <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300"
-                            href="#" data-filter=".project">All Services</a>
-                    </li>
-                    <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
-                            href="#" data-filter=".development">Development</a>
-                    </li>
-                    <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
-                            href="#" data-filter=".infrastructure">Infrastructure</a>
-                    </li>
-                    <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
-                            href="#" data-filter=".ai">AI Solutions</a>
-                    </li>
-                </ul>
+            <div>
+              <dt><span data-counter="160">0</span>+</dt>
+              <dd>Systems integrated across cloud, on-premise, and operational technology estates.</dd>
             </div>
-        </div>
-
+            <div>
+              <dt><span data-counter="99">0</span>.9%</dt>
+              <dd>Service continuity benchmark achieved in managed reliability mandates.</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
     </section>
 
-    <section class="container overflow-hidden py-5">
-        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project development">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Website Development">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Website
-                                Development</span>
-                            <p class="card-text">Custom corporate websites, CMS, e-commerce platforms, and secure web
-                                portals</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project development">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-02.jpg" alt="Mobile Development">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Mobile
-                                Apps</span>
-                            <p class="card-text">Native iOS & Android apps, cross-platform solutions using Flutter &
-                                React Native</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project infrastructure">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Hardware Infrastructure">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Hardware & IT
-                                Systems</span>
-                            <p class="card-text">Servers, storage, network setup, IoT deployments, and security systems
-                            </p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project infrastructure">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Customer Support">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">24x7
-                                Support</span>
-                            <p class="card-text">Helpdesk services, SLA-based resolution, and proactive system
-                                monitoring</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ai">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Agentic AI">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Agentic AI
-                                Solutions</span>
-                            <p class="card-text">Intelligent digital agents, AI-powered automation, and cognitive
-                                assistants</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ai">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-06.jpg" alt="AI Analytics">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">AI
-                                Analytics</span>
-                            <p class="card-text">Data analytics dashboards, cognitive automation, and intelligent
-                                insights</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project development">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-07.jpg" alt="Enterprise Solutions">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Enterprise
-                                Solutions</span>
-                            <p class="card-text">ERP integration, CRM systems, and business process automation</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-            <!-- Start Service -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project infrastructure">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-08.jpg" alt="Security Systems">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Security
-                                Systems</span>
-                            <p class="card-text">CCTV, biometric access control, and comprehensive security
-                                infrastructure</p>
-                        </div>
-                    </div>
-                </a>
-            </div><!-- End Service -->
-
-        </div>
+    <section class="section-md">
+      <div class="container split-statement">
+        <article class="reveal">
+          <p class="eyebrow">Why transformation stalls</p>
+          <h2>Most enterprise programs fail at the integration layer, not at the strategy layer.</h2>
+          <p>Disconnected platforms, fragmented ownership models, and weak governance controls create hidden delivery risk. Teams launch modern tools, but operating models remain brittle.</p>
+        </article>
+        <article class="risk-strip reveal">
+          <h3>Common risk signals we address early</h3>
+          <ul>
+            <li>Legacy core systems with low change velocity and high support spend.</li>
+            <li>Data pipelines that do not support decision-grade analytics.</li>
+            <li>Cloud adoption without reliability engineering controls.</li>
+            <li>AI pilots without deployment governance or measurable adoption criteria.</li>
+          </ul>
+        </article>
+      </div>
     </section>
-    <!-- End Service -->
 
-
-
-
-
-
-    <!-- Start View Work -->
-    <section class="bg-secondary">
-        <div class="container py-5">
-            <div class="row d-flex justify-content-center text-center">
-                <div class="col-lg-2 col-12 text-light align-items-center">
-                    <i class='display-1 bx bxs-box bx-lg'></i>
-                </div>
-                <div class="col-lg-7 col-12 text-light pt-2">
-                    <h3 class="h4 light-300">Digital transformation success stories</h3>
-                    <p class="light-300">Empowering businesses with integrated IT solutions across industries.</p>
-                </div>
-                <div class="col-lg-3 col-12 pt-4">
-                    <a href="work.html" class="btn btn-primary rounded-pill btn-block shadow px-4 py-2">View Our
-                        Services</a>
-                </div>
-            </div>
+    <section class="section-md alt-bg">
+      <div class="container narrative-band reveal">
+        <div>
+          <p class="eyebrow">Our transformation model</p>
+          <h2>One accountable thread from board priorities to engineering execution.</h2>
         </div>
+        <ol class="journey-list">
+          <li>
+            <h3>Strategic Discovery</h3>
+            <p>Quantify operational risk, architecture debt, and value pools before committing implementation budgets.</p>
+          </li>
+          <li>
+            <h3>Architecture Baseline</h3>
+            <p>Design target-state platforms, integration pathways, and governance artifacts that survive delivery trade-offs.</p>
+          </li>
+          <li>
+            <h3>Execution Control Tower</h3>
+            <p>Run sprint-level delivery with executive visibility on risk, spend efficiency, and milestone outcomes.</p>
+          </li>
+        </ol>
+      </div>
     </section>
-    <!-- End View Work -->
 
-    <!-- Start Recent Work -->
-    <section class="py-5 mb-5">
-        <div class="container">
-            <div class="recent-work-header row text-center pb-5">
-                <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Why Choose Us</h2>
-            </div>
-            <div class="row gy-5 g-lg-5 mb-4">
+    <section class="section-md">
+      <div class="container capability-layout">
+        <header class="section-header reveal">
+          <p class="eyebrow">Capability architecture</p>
+          <h2>Integrated capabilities engineered for enterprise continuity.</h2>
+        </header>
 
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-01.jpg"
-                            alt="Domain Expertise">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ Domain Expertise</h3>
-                                <p class="card-text">Years of experience delivering complex IT projects across sectors
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
+        <article class="capability-block reveal">
+          <h3>Digital Engineering Modernization</h3>
+          <p>Domain-driven platform refactoring, API productization, CI/CD hardening, and release governance for predictable throughput.</p>
+        </article>
 
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-02.jpg"
-                            alt="Integrated Solutions">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ Integrated Solutions</h3>
-                                <p class="card-text">From hardware to AI, we offer a single-window approach</p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
+        <article class="capability-block reveal">
+          <h3>Infrastructure Integration &amp; Reliability</h3>
+          <p>Hybrid architecture orchestration, service observability, and reliability operations that lower mean-time-to-recovery and unplanned disruption.</p>
+        </article>
 
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-03.jpg"
-                            alt="Process Driven">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ Process-Driven</h3>
-                                <p class="card-text">ISO-aligned workflows, quality checks, and delivery benchmarks</p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
+        <article class="capability-block reveal">
+          <h3>AI Operating Systems</h3>
+          <p>Business-aligned AI use cases with data governance, MLOps controls, and adoption instrumentation tied to measurable productivity gains.</p>
+        </article>
 
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-04.jpg"
-                            alt="Client Centric">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ Client-Centric Approach</h3>
-                                <p class="card-text">Customized solutions aligned with your unique challenges</p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
-
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-05.jpg" alt="Innovation">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ Innovation & Scalability</h3>
-                                <p class="card-text">Future-ready technologies designed for long-term value</p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
-
-                <!-- Start Feature -->
-                <div class="col-md-4 mb-3">
-                    <a href="#" class="recent-work card border-0 shadow-lg overflow-hidden">
-                        <img class="recent-work-img card-img" src="./assets/img/recent-work-06.jpg" alt="24x7 Support">
-                        <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
-                            <div class="recent-work-content text-start mb-3 ml-3 text-dark">
-                                <h3 class="card-title light-300">✅ 24x7 Support</h3>
-                                <p class="card-text">Dedicated support team ensuring system uptime and continuity</p>
-                            </div>
-                        </div>
-                    </a>
-                </div><!-- End Feature -->
-
-            </div>
-        </div>
+        <article class="capability-block reveal">
+          <h3>Transformation Governance Office</h3>
+          <p>Decision logs, risk registers, and executive reporting cadences that align delivery programs to board-level value realization goals.</p>
+        </article>
+      </div>
     </section>
-    <!-- End Recent Work -->
 
-
-
-    <!-- Start Footer -->
-    <footer class="bg-secondary pt-4">
-        <div class="container">
-            <div class="row py-4">
-
-                <div class="col-lg-3 col-12 align-left">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/img/nwit-logo1.png" alt="NWIT Logo"
-                            style="width: 85px; padding: 10px;background:#fff;">
-                    </a>
-                    <p class="text-light my-lg-4 my-2">
-                        Empowering Digital Transformation with Integrated IT Solutions.
-                        Your trusted technology partner for end-to-end digital excellence.
-                    </p>
-                    <ul class="list-inline footer-icons light-300">
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="http://facebook.com/">
-                                <i class='bx bxl-facebook-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.linkedin.com/">
-                                <i class='bx bxl-linkedin-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
-                                <i class='bx bxl-whatsapp-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.flickr.com/">
-                                <i class='bx bxl-flickr-square bx-md'></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item m-0">
-                            <a class="text-light" target="_blank" href="https://www.medium.com/">
-                                <i class='bx bxl-medium-square bx-md'></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h3 class="h4 pb-lg-3 text-light light-300">Our Company</h2>
-                        <ul class="list-unstyled text-light light-300">
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                    class="text-decoration-none text-light" href="index.html">Home</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                    class="text-decoration-none text-light py-1" href="about.html">About Us</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                    class="text-decoration-none text-light py-1" href="work.html">Work</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a
-                                    class="text-decoration-none text-light py-1" href="pricing.html">Price</a>
-                            </li>
-                            <li class="pb-2">
-                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                    class="text-decoration-none text-light py-1" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Our Services</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Website Development</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Mobile Applications</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Hardware & IT Systems</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Customer Support</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Agentic AI Solutions</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a
-                                class="text-decoration-none text-light py-1" href="#">Security Systems</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">For Client</h2>
-                    <ul class="list-unstyled text-light light-300">
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1"
-                                href="tel:044-48678677">044-4867 8677</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
-                                href="mailto:contact@nwit.in">contact@nwit.in</a>
-                        </li>
-                        <li class="pb-2">
-                            <i class='bx-fw bx bx-map bx-xs'></i><span class="text-light py-1">No 9/19, 19th Street, Jai
-                                Nagar<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arumbakkam, Chennai - 600106</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
+    <section class="section-md alt-bg">
+      <div class="container evidence-layout reveal">
+        <div>
+          <p class="eyebrow">Proof of execution</p>
+          <h2>Outcome patterns from real transformation environments.</h2>
         </div>
-
-        <div class="w-100 bg-primary py-3">
-            <div class="container">
-                <div class="row pt-2">
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-start text-center text-light light-300">
-                            © Copyright 2025 Nextwave Infra Tech (NWIT). All Rights Reserved.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <p class="text-lg-end text-center text-light light-300">
-                            Empowering Digital Excellence | <a class="text-decoration-none text-light"
-                                href="#"><strong>NWIT</strong></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="evidence-items">
+          <article>
+            <h3>Public Health Platform Integration</h3>
+            <p>Unified fragmented service applications and identity systems, reducing reconciliation effort by 38% in year one.</p>
+          </article>
+          <article>
+            <h3>Manufacturing Reliability Program</h3>
+            <p>Introduced telemetry-led incident prevention and achieved 24% reduction in unplanned downtime across plant operations.</p>
+          </article>
         </div>
+        <a class="text-link" href="case-studies.html">Explore detailed case studies</a>
+      </div>
+    </section>
 
-    </footer>
-    <!-- End Footer -->
+    <section class="section-md">
+      <div class="container governance-callout reveal">
+        <div>
+          <p class="eyebrow">Governance by design</p>
+          <h2>Every initiative includes architecture integrity controls, compliance alignment, and value realization checkpoints.</h2>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Request a Transformation Readiness Assessment</a>
+      </div>
+    </section>
+  </main>
 
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div>
+        <h2>Nextwave Infratech</h2>
+        <p>Premium technology transformation consultancy for enterprise digital engineering, governed AI, and infrastructure integration.</p>
+      </div>
+      <div>
+        <h3>Engagement</h3>
+        <ul>
+          <li><a href="services.html">Capabilities</a></li>
+          <li><a href="case-studies.html">Case Evidence</a></li>
+          <li><a href="investors.html">Investor Overview</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Chennai, India</p>
+        <p><a href="mailto:hello@nextwaveinfratech.com">hello@nextwaveinfratech.com</a></p>
+        <p><a href="tel:+914448678677">+91 44 4867 8677</a></p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Load jQuery require for isotope -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Isotope -->
-    <script src="assets/js/isotope.pkgd.js"></script>
-    <!-- Page Script -->
-    <script>
-        $(window).load(function () {
-            // init Isotope
-            var $projects = $('.projects').isotope({
-                itemSelector: '.project',
-                layoutMode: 'fitRows'
-            });
-            $(".filter-btn").click(function () {
-                var data_filter = $(this).attr("data-filter");
-                $projects.isotope({
-                    filter: data_filter
-                });
-                $(".filter-btn").removeClass("active");
-                $(".filter-btn").removeClass("shadow");
-                $(this).addClass("active");
-                $(this).addClass("shadow");
-                return false;
-            });
-        });
-    </script>
-    <!-- NWIT Scripts -->
-    <script src="assets/js/nwit-scripts.js"></script>
-    <!-- Custom -->
-    <script src="assets/js/custom.js"></script>
-
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
